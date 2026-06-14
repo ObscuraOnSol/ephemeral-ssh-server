@@ -1,0 +1,9 @@
+name: Ephemeral SSH Server
+on: [workflow_dispatch] # Allows you to start it manually
+
+jobs:
+  run-server:
+    runs-on: ubuntu-latest # Launches Microsoft's Ubuntu environment
+    steps:
+    - name: Launch Ephemeral SSH Tunnel
+      uses: mxschmitt/action-tmate@v3
